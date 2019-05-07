@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Planner 2019</title>
+
+<link rel="stylesheet" href="css/planner.css">
+
+</head>
+
+<body>
+
+<header>
+<h1 align="center">2019 PLANNER</h1>
+</header>
+
+    <div class="left">
+       <section>
+        <p id="tani"></p>
+         </section>
+        
+<!--forma per te bere komentet-->
+      <article> 
+       <div>
+        <div id="fufu">
+        <fieldset>
+          Shenim i dites:
+<p id="futuru"></p>
+        </fieldset>
+        </div>
+        <br>
+        <br>
+        <form id="comment">
+         <fieldset>
+           Shkruaj:<br>
+         <textarea name="titulli" id="titull" rows="6" cols="30"></textarea><br>
+         <input type="button" name="save" value="Ruaj" onclick="afisho()">
+       </fieldset>
+      </form>
+    </div>
+    </article>
+    </div>
+
+    <div class="right">
+        <aside>
+<nav id="a"><ul>
+    <li><button class="majtas" onclick="plusDivs(-1); emriMuajitm()"></button></li>
+            <p id="currentmonth"></p>
+            <li><button class="djathtas" onclick="plusDivs(1); emriMuajit()"></button></li>
+          </nav>
+            <div id="datat">
+            <table class="muaj" id="Janar">
+              
+                 <tr>
+                  <th>H</th>
+                  <th>M</th>
+                  <th>M</th>
+                  <th>E</th>
+                  <th>P</th>
+                  <th>Sh</th>
+                  <th>D</th>
+                 </tr>
+                 <tr>
+                  <td></td>
+                  <td><button class="btn" ondblclick="vizibel()">1</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">2</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">3</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">4</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">5</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">6</button></td>
+                 </tr>
+                  <td><button class="btn" ondblclick="vizibel()">7</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">8</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">9</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">10</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">11</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">12</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">13</button></td>
+                 <tr>
+                  <td><button class="btn" ondblclick="vizibel()">14</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">15</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">16</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">17</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">18</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">19</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">20</button></td>
+                 </tr>
+                  <td><button class="btn" ondblclick="vizibel()">21</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">22</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">23</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">24</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">25</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">26</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">27</button></td>
+                 <tr>
+                 <td><button class="btn" ondblclick="vizibel()">28</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">29</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">30</button></td>
+                  <td><button class="btn" ondblclick="vizibel()">31</button></td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                 </tr>
+            </table>
+        
+            <table class="muaj" id="Shkurt">
+
+                  <tr>
+                  <th>H</th>
+                  <th>M</th>
+                  <th>M</th>
+                  <th>E</th>
+                  <th>P</th>
+                  <th>Sh</th>
+                  <th>D</th>
+                  </tr>
+                  <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td><button class="btn" ondblclick="vizibel()">1</td>
+                  <td><button class="btn" ondblclick="vizibel()">2</td>
+                  <td><button class="btn" ondblclick="vizibel()">3</td>
+                  </tr>
+                  <td><button class="btn" ondblclick="vizibel()">4</td>
+                  <td><button class="btn" ondblclick="vizibel()">5</td>
+                  <td><button class="btn" ondblclick="vizibel()">6</td>
+                  <td><button class="btn" ondblclick="vizibel()">7</td>
+                  <td><button class="btn" ondblclick="vizibel()">8</td>
+                  <td><button class="btn" ondblclick="vizibel()">9</td>
+                  <td><button class="btn" ondblclick="vizibel()">10</td>
+                  <tr>
+                  <td><button class="btn" ondblclick="vizibel()">11</td>
+                  <td><button class="btn" ondblclick="vizibel()">12</td>
+                  <td><button class="btn" ondblclick="vizibel()">13</td>
+                  <td><button class="btn" ondblclick="vizibel()">14</td>
+                  <td><button class="btn" ondblclick="vizibel()">15</td>
+                  <td><button class="btn" ondblclick="vizibel()">16</td>
+                  <td><button class="btn" ondblclick="vizibel()">17</td>
+                  </tr>
+                  <td><button class="btn" ondblclick="vizibel()">18</td>
+                  <td><button class="btn" ondblclick="vizibel()">19</td>
+                  <td><button class="btn" ondblclick="vizibel()">20</td>
+                  <td><button class="btn" ondblclick="vizibel()">21</td>
+                  <td><button class="btn" ondblclick="vizibel()">22</td>
+                  <td><button class="btn" ondblclick="vizibel()">23</td>
+                  <td><button class="btn" ondblclick="vizibel()">24</td>
+                  <tr>
+                  <td><button class="btn" ondblclick="vizibel()">25</td>
+                  <td><button class="btn" ondblclick="vizibel()">26</td>
+                  <td><button class="btn" ondblclick="vizibel()">27</td>
+                  <td><button class="btn" ondblclick="vizibel()">28</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  </tr>
+                </table>
+
+<table class="muaj" id="Mars">
+  <tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+  </tr>
+  <tr>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td><button class="btn" ondblclick="vizibel()">1</td>
+  <td><button class="btn" ondblclick="vizibel()">2</td>
+  <td><button class="btn" ondblclick="vizibel()">3</td>
+  </tr>
+  <td><button class="btn" ondblclick="vizibel()">4</td>
+  <td><button class="btn" ondblclick="vizibel()">5</td>
+  <td><button class="btn" ondblclick="vizibel()">6</td>
+  <td><button class="btn" ondblclick="vizibel()">7</td>
+  <td><button class="btn" ondblclick="vizibel()">8</td>
+  <td><button class="btn" ondblclick="vizibel()">9</td>
+  <td><button class="btn" ondblclick="vizibel()">10</td>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">11</td>
+  <td><button class="btn" ondblclick="vizibel()">12</td>
+  <td><button class="btn" ondblclick="vizibel()">13</td>
+  <td><button class="btn" ondblclick="vizibel()">14</td>
+  <td><button class="btn" ondblclick="vizibel()">15</td>
+  <td><button class="btn" ondblclick="vizibel()">16</td>
+  <td><button class="btn" ondblclick="vizibel()">17</td>
+  </tr>
+  <td><button class="btn" ondblclick="vizibel()">18</td>
+  <td><button class="btn" ondblclick="vizibel()">19</td>
+  <td><button class="btn" ondblclick="vizibel()">20</td>
+  <td><button class="btn" ondblclick="vizibel()">21</td>
+  <td><button class="btn" ondblclick="vizibel()">22</td>
+  <td><button class="btn" ondblclick="vizibel()">23</td>
+  <td><button class="btn" ondblclick="vizibel()">24</td>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">25</td>
+  <td><button class="btn" ondblclick="vizibel()">26</td>
+  <td><button class="btn" ondblclick="vizibel()">27</td>
+  <td><button class="btn" ondblclick="vizibel()">28</td>
+  <td><button class="btn" ondblclick="vizibel()">29</td>
+  <td><button class="btn" ondblclick="vizibel()">30</td>
+  <td><button class="btn" ondblclick="vizibel()">31</td>
+  </tr>
+</table>
+
+<table class="muaj" id="Prill">
+  <tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+  </tr>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">1</td>
+  <td><button class="btn" ondblclick="vizibel()">2</td>
+  <td><button class="btn" ondblclick="vizibel()">3</td>
+  <td><button class="btn" ondblclick="vizibel()">4</td>
+  <td><button class="btn" ondblclick="vizibel()">5</td>
+  <td><button class="btn" ondblclick="vizibel()">6</td>
+  <td><button class="btn" ondblclick="vizibel()">7</td>
+  </tr>
+  <td><button class="btn" ondblclick="vizibel()">8</td>
+  <td><button class="btn" ondblclick="vizibel()">9</td>
+  <td><button class="btn" ondblclick="vizibel()">10</td>
+  <td><button class="btn" ondblclick="vizibel()">11</td>
+  <td><button class="btn" ondblclick="vizibel()">12</td>
+  <td><button class="btn" ondblclick="vizibel()">13</td>
+  <td><button class="btn" ondblclick="vizibel()">14</td>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">15</td>
+  <td><button class="btn" ondblclick="vizibel()">16</td>
+  <td><button class="btn" ondblclick="vizibel()">17</td>
+  <td><button class="btn" ondblclick="vizibel()">18</td>
+  <td><button class="btn" ondblclick="vizibel()">19</td>
+  <td><button class="btn" ondblclick="vizibel()">20</td>
+  <td><button class="btn" ondblclick="vizibel()">21</td>
+  </tr>
+  <td><button class="btn" ondblclick="vizibel()">22</td>
+  <td><button class="btn" ondblclick="vizibel()">23</td>
+  <td><button class="btn" ondblclick="vizibel()">24</td>
+  <td><button class="btn" ondblclick="vizibel()">25</td>
+  <td><button class="btn" ondblclick="vizibel()">26</td>
+  <td><button class="btn" ondblclick="vizibel()">27</td>
+  <td><button class="btn" ondblclick="vizibel()">28</td>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">29</td>
+  <td><button class="btn" ondblclick="vizibel()">30</td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  </tr>
+</table>
+<table class="muaj" id="Maj">
+  <tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+  </tr>
+  <tr>
+  <td> </td>
+  <td> </td>
+  <td><button class="btn" ondblclick="vizibel()">1</td>
+  <td><button class="btn" ondblclick="vizibel()">2</td>
+  <td><button class="btn" ondblclick="vizibel()">3</td>
+  <td><button class="btn" ondblclick="vizibel()">4</td>
+  <td><button class="btn" ondblclick="vizibel()">5</td>
+  </tr>
+  <td><button class="btn" ondblclick="vizibel()">6</td>
+  <td><button class="btn" ondblclick="vizibel()">7</td>
+  <td><button class="btn" ondblclick="vizibel()">8</td>
+  <td><button class="btn" ondblclick="vizibel()">9</td>
+  <td><button class="btn" ondblclick="vizibel()">10</td>
+  <td><button class="btn" ondblclick="vizibel()">11</td>
+  <td><button class="btn" ondblclick="vizibel()">12</td>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">13</td>
+  <td><button class="btn" ondblclick="vizibel()">14</td>
+  <td><button class="btn" ondblclick="vizibel()">15</td>
+  <td><button class="btn" ondblclick="vizibel()">16</td>
+  <td><button class="btn" ondblclick="vizibel()">17</td>
+  <td><button class="btn" ondblclick="vizibel()">18</td>
+  <td><button class="btn" ondblclick="vizibel()">19</td>
+  </tr>
+  <td><button class="btn" ondblclick="vizibel()">20</td>
+  <td><button class="btn" ondblclick="vizibel()">21</td>
+  <td><button class="btn" ondblclick="vizibel()">22</td>
+  <td><button class="btn" ondblclick="vizibel()">23</td>
+  <td><button class="btn" ondblclick="vizibel()">24</td>
+  <td><button class="btn" ondblclick="vizibel()">25</td>
+  <td><button class="btn" ondblclick="vizibel()">26</td>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">27</td>
+  <td><button class="btn" ondblclick="vizibel()">28</td>
+  <td><button class="btn" ondblclick="vizibel()">29</td>
+  <td><button class="btn" ondblclick="vizibel()">30</td>
+  <td><button class="btn" ondblclick="vizibel()">31</td>
+  <td> </td>
+  <td> </td>
+  </tr>
+</table>
+<table class="muaj" id="Qershor">
+  <tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+  </tr>
+  <tr>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td><button class="btn" ondblclick="vizibel()">1</td>
+  <td><button class="btn" ondblclick="vizibel()">2</td>
+  </tr>
+  <td><button class="btn" ondblclick="vizibel()">3</td>
+  <td><button class="btn" ondblclick="vizibel()">4</td>
+  <td><button class="btn" ondblclick="vizibel()">5</td>
+  <td><button class="btn" ondblclick="vizibel()">6</td>
+  <td><button class="btn" ondblclick="vizibel()">7</td>
+  <td><button class="btn" ondblclick="vizibel()">8</td>
+  <td><button class="btn" ondblclick="vizibel()">9</td>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">10</td>
+  <td><button class="btn" ondblclick="vizibel()">11</td>
+  <td><button class="btn" ondblclick="vizibel()">12</td>
+  <td><button class="btn" ondblclick="vizibel()">13</td>
+  <td><button class="btn" ondblclick="vizibel()">14</td>
+  <td><button class="btn" ondblclick="vizibel()">15</td>
+  <td><button class="btn" ondblclick="vizibel()">16</td>
+  </tr>
+  <td><button class="btn" ondblclick="vizibel()">17</td>
+  <td><button class="btn" ondblclick="vizibel()">18</td>
+  <td><button class="btn" ondblclick="vizibel()">19</td>
+  <td><button class="btn" ondblclick="vizibel()">20</td>
+  <td><button class="btn" ondblclick="vizibel()">21</td>
+  <td><button class="btn" ondblclick="vizibel()">22</td>
+  <td><button class="btn" ondblclick="vizibel()">23</td>
+  <tr>
+  <td><button class="btn" ondblclick="vizibel()">24</td>
+  <td><button class="btn" ondblclick="vizibel()">25</td>
+  <td><button class="btn" ondblclick="vizibel()">26</td>
+  <td><button class="btn" ondblclick="vizibel()">27</td>
+  <td><button class="btn" ondblclick="vizibel()">28</td>
+  <td><button class="btn" ondblclick="vizibel()">29</td>
+  <td><button class="btn" ondblclick="vizibel()">30</td>
+  </tr>
+</table>
+
+                <table class="muaj" id="Korrik">
+<tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+</tr>
+
+<tr>
+<td><button class="btn" ondblclick="vizibel()">1</td>
+<td><button class="btn" ondblclick="vizibel()">2</td>
+<td><button class="btn" ondblclick="vizibel()">3</td>
+<td><button class="btn" ondblclick="vizibel()">4</td>
+<td><button class="btn" ondblclick="vizibel()">5</td>
+<td><button class="btn" ondblclick="vizibel()">6</td>
+<td><button class="btn" ondblclick="vizibel()">7</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">8</td>
+<td><button class="btn" ondblclick="vizibel()">9</td>
+<td><button class="btn" ondblclick="vizibel()">10</td>
+<td><button class="btn" ondblclick="vizibel()">11</td>
+<td><button class="btn" ondblclick="vizibel()">12</td>
+<td><button class="btn" ondblclick="vizibel()">13</td>
+<td><button class="btn" ondblclick="vizibel()">14</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">15</td>
+<td><button class="btn" ondblclick="vizibel()">16</td>
+<td><button class="btn" ondblclick="vizibel()">17</td>
+<td><button class="btn" ondblclick="vizibel()">18</td>
+<td><button class="btn" ondblclick="vizibel()">19</td>
+<td><button class="btn" ondblclick="vizibel()">20</td>
+<td><button class="btn" ondblclick="vizibel()">21</td>
+<tr>
+<td><button class="btn" ondblclick="vizibel()">22</td>
+<td><button class="btn" ondblclick="vizibel()">23</td>
+<td><button class="btn" ondblclick="vizibel()">24</td>
+<td><button class="btn" ondblclick="vizibel()">25</td>
+<td><button class="btn" ondblclick="vizibel()">26</td>
+<td><button class="btn" ondblclick="vizibel()">27</td>
+<td><button class="btn" ondblclick="vizibel()">28</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">29</td>
+<td><button class="btn" ondblclick="vizibel()">30</td>
+<td><button class="btn" ondblclick="vizibel()">31</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+  </tr>
+  </tr>
+</table>
+
+
+<table class="muaj" id="Gusht">
+
+<tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><button class="btn" ondblclick="vizibel()">1</td>
+<td><button class="btn" ondblclick="vizibel()">2</td>
+<td><button class="btn" ondblclick="vizibel()">3</td>
+<td><button class="btn" ondblclick="vizibel()">4</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">5</td>
+<td><button class="btn" ondblclick="vizibel()">6</td>
+<td><button class="btn" ondblclick="vizibel()">7</td>
+<td><button class="btn" ondblclick="vizibel()">8</td>
+<td><button class="btn" ondblclick="vizibel()">9</td>
+<td><button class="btn" ondblclick="vizibel()">10</td>
+<td><button class="btn" ondblclick="vizibel()">11</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">12</td>
+<td><button class="btn" ondblclick="vizibel()">13</td>
+<td><button class="btn" ondblclick="vizibel()">14</td>
+<td><button class="btn" ondblclick="vizibel()">15</td>
+<td><button class="btn" ondblclick="vizibel()">16</td>
+<td><button class="btn" ondblclick="vizibel()">17</td>
+<td><button class="btn" ondblclick="vizibel()">18</td>
+<tr>
+<td><button class="btn" ondblclick="vizibel()">19</td>
+<td><button class="btn" ondblclick="vizibel()">20</td>
+<td><button class="btn" ondblclick="vizibel()">21</td>
+<td><button class="btn" ondblclick="vizibel()">22</td>
+<td><button class="btn" ondblclick="vizibel()">23</td>
+<td><button class="btn" ondblclick="vizibel()">24</td>
+<td><button class="btn" ondblclick="vizibel()">25</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">26</td>
+<td><button class="btn" ondblclick="vizibel()">27</td>
+<td><button class="btn" ondblclick="vizibel()">28</td>
+<td><button class="btn" ondblclick="vizibel()">29</td>
+<td><button class="btn" ondblclick="vizibel()">30</td>
+<td><button class="btn" ondblclick="vizibel()">31</td>
+<td></td>
+  </tr>
+</tr>
+</table>
+
+<table class="muaj" id="Shtator">
+
+<tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><button class="btn" ondblclick="vizibel()">1</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">2</td>
+<td><button class="btn" ondblclick="vizibel()">3</td>
+<td><button class="btn" ondblclick="vizibel()">4</td>
+<td><button class="btn" ondblclick="vizibel()">5</td>
+<td><button class="btn" ondblclick="vizibel()">6</td>
+<td><button class="btn" ondblclick="vizibel()">7</td>
+<td><button class="btn" ondblclick="vizibel()">8</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">9</td>
+<td><button class="btn" ondblclick="vizibel()">10</td>
+<td><button class="btn" ondblclick="vizibel()">11</td>
+<td><button class="btn" ondblclick="vizibel()">12</td>
+<td><button class="btn" ondblclick="vizibel()">13</td>
+<td><button class="btn" ondblclick="vizibel()">14</td>
+<td><button class="btn" ondblclick="vizibel()">15</td>
+</tr>
+<tr>
+<td><button class="btn" ondblclick="vizibel()">16</td>
+<td><button class="btn" ondblclick="vizibel()">17</td>
+<td><button class="btn" ondblclick="vizibel()">18</td>
+<td><button class="btn" ondblclick="vizibel()">19</td>
+<td><button class="btn" ondblclick="vizibel()">20</td>
+<td><button class="btn" ondblclick="vizibel()">21</td>
+<td><button class="btn" ondblclick="vizibel()">22</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">23</td>
+<td><button class="btn" ondblclick="vizibel()">24</td>
+<td><button class="btn" ondblclick="vizibel()">25</td>
+<td><button class="btn" ondblclick="vizibel()">26</td>
+<td><button class="btn" ondblclick="vizibel()">27</td>
+<td><button class="btn" ondblclick="vizibel()">28</td>
+<td><button class="btn" ondblclick="vizibel()">29</td>
+</tr>
+<tr>
+<td><button class="btn" ondblclick="vizibel()">30</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+  </tr>
+  </tr>
+</table>
+
+<table class="muaj" id="Tetor">
+
+<tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+</tr>
+
+<tr>
+<td></td>
+<td><button class="btn" ondblclick="vizibel()">1</td>
+<td><button class="btn" ondblclick="vizibel()">2</td>
+<td><button class="btn" ondblclick="vizibel()">3</td>
+<td><button class="btn" ondblclick="vizibel()">4</td>
+<td><button class="btn" ondblclick="vizibel()">5</td>
+<td><button class="btn" ondblclick="vizibel()">6</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">7</td>
+<td><button class="btn" ondblclick="vizibel()">8</td>
+<td><button class="btn" ondblclick="vizibel()">9</td>
+<td><button class="btn" ondblclick="vizibel()">10</td>
+<td><button class="btn" ondblclick="vizibel()">11</td>
+<td><button class="btn" ondblclick="vizibel()">12</td>
+<td><button class="btn" ondblclick="vizibel()">13</td>  
+</tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">14</td>
+<td><button class="btn" ondblclick="vizibel()">15</td>
+<td><button class="btn" ondblclick="vizibel()">16</td>
+<td><button class="btn" ondblclick="vizibel()">17</td>
+<td><button class="btn" ondblclick="vizibel()">18</td>
+<td><button class="btn" ondblclick="vizibel()">19</td>
+<td><button class="btn" ondblclick="vizibel()">20</td>
+</tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">21</td>
+<td><button class="btn" ondblclick="vizibel()">22</td>
+<td><button class="btn" ondblclick="vizibel()">23</td>
+<td><button class="btn" ondblclick="vizibel()">24</td>
+<td><button class="btn" ondblclick="vizibel()">25</td>
+ <td><button class="btn" ondblclick="vizibel()">26</td>
+<td><button class="btn" ondblclick="vizibel()">27</td> 
+</tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">28</td>
+<td><button class="btn" ondblclick="vizibel()">29</td>
+<td><button class="btn" ondblclick="vizibel()">30</td>
+<td><button class="btn" ondblclick="vizibel()">31</td>
+<td></td>
+<td></td>
+<td></td>
+  </tr>
+  </tr>
+</table>
+
+<table class="muaj" id="Nentor">
+<tr>
+                  <th>H</th>
+                  <th>M</th>
+                  <th>M</th>
+                  <th>E</th>
+                  <th>P</th>
+                  <th>Sh</th>
+                  <th>D</th>
+                  </tr>
+                  <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td><button class="btn" ondblclick="vizibel()">1</td>
+                  <td><button class="btn" ondblclick="vizibel()">2</td>
+                  <td><button class="btn" ondblclick="vizibel()">3</td>
+                  </tr>
+                  <td><button class="btn" ondblclick="vizibel()">4</td>
+                  <td><button class="btn" ondblclick="vizibel()">5</td>
+                  <td><button class="btn" ondblclick="vizibel()">6</td>
+                  <td><button class="btn" ondblclick="vizibel()">7</td>
+                  <td><button class="btn" ondblclick="vizibel()">8</td>
+                  <td><button class="btn" ondblclick="vizibel()">9</td>
+                  <td><button class="btn" ondblclick="vizibel()">10</td>
+                  <tr>
+                  <td><button class="btn" ondblclick="vizibel()">11</td>
+                  <td><button class="btn" ondblclick="vizibel()">12</td>
+                  <td><button class="btn" ondblclick="vizibel()">13</td>
+                  <td><button class="btn" ondblclick="vizibel()">14</td>
+                  <td><button class="btn" ondblclick="vizibel()">15</td>
+                  <td><button class="btn" ondblclick="vizibel()">16</td>
+                  <td><button class="btn" ondblclick="vizibel()">17</td>
+                  </tr>
+                  <td><button class="btn" ondblclick="vizibel()">18</td>
+                  <td><button class="btn" ondblclick="vizibel()">19</td>
+                  <td><button class="btn" ondblclick="vizibel()">20</td>
+                  <td><button class="btn" ondblclick="vizibel()">21</td>
+                  <td><button class="btn" ondblclick="vizibel()">22</td>
+                  <td><button class="btn" ondblclick="vizibel()">23</td>
+                  <td><button class="btn" ondblclick="vizibel()">24</td>
+                  <tr>
+                  <td><button class="btn" ondblclick="vizibel()">25</td>
+                  <td><button class="btn" ondblclick="vizibel()">26</td>
+                  <td><button class="btn" ondblclick="vizibel()">27</td>
+                  <td><button class="btn" ondblclick="vizibel()">28</td>
+                  <td><button class="btn" ondblclick="vizibel()">29</td>
+                  <td><button class="btn" ondblclick="vizibel()">30</td>
+                  <td> </td>
+                  </tr>
+                </table>
+
+<table class="muaj" id="Dhjetor">
+<tr>
+  <th>H</th>
+  <th>M</th>
+  <th>M</th>
+  <th>E</th>
+  <th>P</th>
+  <th>Sh</th>
+  <th>D</th>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><button class="btn" ondblclick="vizibel()">1</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">2</td>
+<td><button class="btn" ondblclick="vizibel()">3</td>
+<td><button class="btn" ondblclick="vizibel()">4</td>
+<td><button class="btn" ondblclick="vizibel()">5</td>
+<td><button class="btn" ondblclick="vizibel()">6</td>
+<td><button class="btn" ondblclick="vizibel()">7</td>
+<td><button class="btn" ondblclick="vizibel()">8</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">9</td>
+<td><button class="btn" ondblclick="vizibel()">10</td>
+<td><button class="btn" ondblclick="vizibel()">11</td>
+<td><button class="btn" ondblclick="vizibel()">12</td>
+<td><button class="btn" ondblclick="vizibel()">13</td>
+<td><button class="btn" ondblclick="vizibel()">14</td>
+<td><button class="btn" ondblclick="vizibel()">15</td>
+</tr>
+<tr>
+<td><button class="btn" ondblclick="vizibel()">16</td>
+<td><button class="btn" ondblclick="vizibel()">17</td>
+<td><button class="btn" ondblclick="vizibel()">18</td>
+<td><button class="btn" ondblclick="vizibel()">19</td>
+<td><button class="btn" ondblclick="vizibel()">20</td>
+<td><button class="btn" ondblclick="vizibel()">21</td>
+<td><button class="btn" ondblclick="vizibel()">22</td>
+  </tr>
+  <tr>
+<td><button class="btn" ondblclick="vizibel()">23</td>
+<td><button class="btn" ondblclick="vizibel()">24</td>
+<td><button class="btn" ondblclick="vizibel()">25</td>
+<td><button class="btn" ondblclick="vizibel()">26</td>
+<td><button class="btn" ondblclick="vizibel()">27</td>
+<td><button class="btn" ondblclick="vizibel()">28</td>
+<td><button class="btn" ondblclick="vizibel()">29</td>
+</tr>
+<tr>
+<td><button class="btn" ondblclick="vizibel()">30</td>
+<td><button class="btn" ondblclick="vizibel()">31</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+  </tr>
+  </tr>
+</table>
+                
+  </div>
+          </div>
+
+        </aside>
+
+<iframe width="0" height="0" src="https://www.youtube.com/embed/hHW1oY26kxQ?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script src="planner.js"></script>
+</body>
+
+<footer><i>&#169 Edit Muzhaqi 2019</i></footer>
+
+</html>
